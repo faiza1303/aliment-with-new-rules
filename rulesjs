@@ -1,0 +1,2310 @@
+var ESD1_MESSAGES =
+{
+  Rules:
+    {
+        ESD1_ERROR_01_Maki:
+        {
+            ErrorRule: "1",
+            ErrorId: "R01",
+            Wording: "Il est interdit d'utiliser le bouton à l'intérieur d'une light box.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/141//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_01_Err:
+        {
+            ErrorRule: "1",
+            ErrorId: "R01.err",
+            Wording: "Il est interdit d'utiliser ce type de bouton à l'intérieur d'une light box. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/141//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_01_Warn:
+        {
+            ErrorRule: "1",
+            ErrorId: "R01.warn",
+            Wording: "Il est interdit d'utiliser ce type bouton à l'intérieur d'une light box. ({0}).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/141//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_02:
+        {
+            ErrorRule: "2",
+            ErrorId: "R02",
+            Wording: "Le composant Fil d'Ariane doit être le premier élément de la page.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/27//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_03:
+        {
+            ErrorRule: "3",
+            ErrorId: "R03",
+            Wording: "Il est interdit d'utiliser le composant Fil d'Ariane.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/27//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_04:
+        {
+            ErrorRule: "4",
+            ErrorId: "R04",
+            Wording: "Les balises html 'iframe' et 'frame' doivent avoir un attribut 'title' renseigné et pertinent.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "2.1",
+                Libelle: "Chaque cadre a-t-il un titre de cadre ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#2.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_05:
+        {
+            ErrorRule: "5",
+            ErrorId: "R05",
+            Wording: "Il est interdit d'utiliser les classes fondvert, fondbleu, fondviolet, fondorange, fondrose ou fondrouge.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/273//menu:menu)",
+            Categories: ["Homogénéité"]
+        },
+        ESD1_ERROR_06_Maki:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06",
+            Wording: "Privilégier l'utilisation du composant ou de la balise officiels et non celle de l'élément déprécié.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://wlib-SI.cm-cic.fr/?mnc=SRVIPX&typ=VIEWDOC&par=CodeObjet:0990061531;CodeSitePixis:99;Fede:11;Banque:10278;Guichet:00111",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_06_0:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06",
+            Wording: "Privilégier l'utilisation du composant {1} et non celle du composant {0}.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://wlib-SI.cm-cic.fr/?mnc=SRVIPX&typ=VIEWDOC&par=CodeObjet:0990061531;CodeSitePixis:99;Fede:11;Banque:10278;Guichet:00111",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_06_1:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06.1",
+            Wording: "Le composant {0} est déprécié, son utilisation est à éviter.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_06_2:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06",
+            Wording: "Privilégier l'utilisation du composant {1} et non celle du composant {0}.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_06_3:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06",
+            Wording: "Privilégier l'utilisation du composant {1} et non celle de l'élément html {0}.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_06_4:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06",
+            Wording: "Privilégier l'utilisation du l'élément html {1} et non celle de l'élément html {0}.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_06_5:
+        {
+            ErrorRule: "6",
+            ErrorId: "R06.1",
+            Wording: "L'élément html {0} est déprécié, son utilisation est à éviter.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_07:
+        {
+            ErrorRule: "7",
+            ErrorId: "R07",
+            Wording: "Un tableau de type saisie doit contenir au moins un objet de saisie.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/207//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_08:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08",
+            Wording: "Un attribut Title sur un lien doit reprendre l'intitulé du lien, et le compléter.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "6.1",
+                Libelle: "Chaque lien est-il explicite (hors cas particuliers) ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/glossaire/#intitule-ou-nom-accessible-de-lien",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_1:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.1",
+            Wording: "Tout lien doit avoir un contenu.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "6.2",
+                Libelle: "Dans chaque page web, chaque lien, à l'exception des ancres, a-t-il un intitulé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.2.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_2:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.2",
+            Wording: "L'attribut aria-label doit contenir l'intitulé du lien.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "6.1",
+                Libelle: "Chaque lien est-il explicite (hors cas particuliers) ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.1.5",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_3:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.3",
+            Wording: "La cible de l'attribut aria-labelledby doit contenir l'intitulé du lien.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "6.1",
+                Libelle: "Chaque lien est-il explicite (hors cas particuliers) ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.1.5",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_4:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.4",
+            Wording: "Chaque image contenue dans un lien doit avoir une alternative textuelle",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "6.1",
+                Libelle: "Chaque lien est-il explicite (hors cas particuliers) ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_5:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.5",
+            Wording: "Tout lien doit avoir un contenu. Un ou plusieurs liens vides ont pu être générés par le navigateur à cause de l'imbrication de deux liens.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "6.2",
+                Libelle: "Dans chaque page web, chaque lien, à l'exception des ancres, a-t-il un intitulé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.2.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_6:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.6",
+            Wording: "Un lien icône qui ne comporte pas d'intitulé visible doit posseder un attribut title",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Lisibilité"],
+            RGAA: {
+                Test: "6.2",
+                Libelle: "Dans chaque page web, chaque lien, à l'exception des ancres, a-t-il un intitulé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.2.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_08_7:
+        {
+            ErrorRule: "8",
+            ErrorId: "R08.7",
+            Wording: "Un lien, même désactivé, doit posseder un attribut title",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Lisibilité"],
+            RGAA: {
+                Test: "6.2",
+                Libelle: "Dans chaque page web, chaque lien, à l'exception des ancres, a-t-il un intitulé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#6.2.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_Maki:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09",
+            Wording: "Tout élément de saisie doit être associé à un label visible (ou quand ce n'est pas possible, à une infobulle).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/207//menu:menu)",
+            Categories: ["Accessibilité"]
+        },
+        ESD1_ERROR_09_0:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09",
+            Wording: "Tout élément de saisie doit être associé à un label visible (ou quand ce n'est pas possible, à une infobulle). ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/207//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "11.1",
+                Libelle: "Chaque champ de formulaire a-t-il une étiquette ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1.3",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_1:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09.1",
+            Wording: "Tout label doit être associé à un unique champ de saisie. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/207//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "11.1",
+                Libelle: "Chaque champ de formulaire a-t-il une étiquette ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_2:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09.2",
+            Wording: "Tout élément possédant l'attribut aria-labelledby doit pointer vers un ou plusieurs éléments existants. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/207//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "11.1",
+                Libelle: "Chaque champ de formulaire a-t-il une étiquette ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_3:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09.3",
+            Wording: "L'attribut Title d'un élément de saisie doit reprendre son intitulé visible et le compléter.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.1",
+                Libelle: "Chaque champ de formulaire a-t-il une étiquette ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_4:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09.4",
+            Wording: "Il est préférable de compléter l'étiquette visible d'un élément de saisie plutôt que d'utiliser l'attribut title.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.1",
+                Libelle: "Chaque champ de formulaire a-t-il une étiquette ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_5:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09.5",
+            Wording: "Tout élément de rôle groupe doit avoir un label.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.6",
+                Libelle: "Chaque regroupement de champs de même nature possède-t-il une légende ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.6",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_09_6:
+        {
+            ErrorRule: "9",
+            ErrorId: "R09.6",
+            Wording: "Tout élément de rôle radio groupe doit avoir un label.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.6",
+                Libelle: "Chaque regroupement de champs de même nature possède-t-il une légende ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.6",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_10:
+        {
+            ErrorRule: "10",
+            ErrorId: "R10",
+            Wording: "La page doit posséder une balise  <code>&lt;title&gt;</code>.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "8.5",
+                Libelle: "Chaque page web a-t-elle un titre de page ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#8",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_11:
+        {
+            ErrorRule: "11",
+            ErrorId: "R11",
+            Wording: "Le bouton doit faire partie d'un Bloc boutons. ({0}).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_Maki:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12",
+            Wording: "Ordre des boutons dans le Bloc boutons.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_1:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.1",
+            Wording: "Le bouton de type '{0}' doit être positionné avant le bouton de type '{1}'.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_2:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.2",
+            Wording: "Le bouton de type '{0}' a été utilisé deux fois.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_3:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.3",
+            Wording: "Les boutons de type '{0}' et '{1}' sont incompatibles.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_4:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.4",
+            Wording: "Le bouton de type '{0}' est à utiliser avec le bouton de type '{1}'.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_5:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.5",
+            Wording: "Les boutons de type '{0}' et '{1}' sont à utiliser nécessairement avec le bouton de type '{2}'.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_6:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.6",
+            Wording: "Il ne peut y avoir qu’un seul bouton avec la position primaire.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_12_7:
+        {
+            ErrorRule: "12",
+            ErrorId: "R12.7",
+            Wording: "Le bouton '{0}' doit être positionné avant le bouton  '{1}'.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_13_Maki:
+        {
+            ErrorRule: "13",
+            ErrorId: "R13",
+            Wording: "Le bouton ne doit pas être utilisé sur une page intranet/internet.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_13_1:
+        {
+            ErrorRule: "13",
+            ErrorId: "R13",
+            Wording: "Le bouton ne doit pas être utilisé. ({0}).",
+            Level: "warn",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_13_2:
+        {
+            ErrorRule: "13",
+            ErrorId: "R13",
+            Wording: "Le bouton ne doit pas être utilisé. ({0}).",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_14_Maki:
+        {
+            ErrorRule: "14",
+            ErrorId: "R14",
+            Wording: "Toute image doit avoir une alternative (propriété Alt) textuelle pertinente (image porteuse d’information) ou vide (image décorative).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/133//menu:menu)",
+            Categories: ["Accessibilité"]
+        },
+        ESD1_ERROR_14_0:
+        {
+            ErrorRule: "14",
+            ErrorId: "R14",
+            Wording: "Toute image doit avoir une alternative (propriété Alt) textuelle pertinente (image porteuse d’information) ou vide (image décorative). {0}.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/133//menu:menu)",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "1.1",
+                Libelle: "Chaque image porteuse d'information a-t-elle une alternative textuelle ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_14_1:
+        {
+            ErrorRule: "14.1",
+            ErrorId: "R14.1",
+            Wording: "Tout canvas doit avoir une alternative (attribut title) textuelle pertinente (image porteuse d’information) ou vide (image décorative).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/133//menu:menu)",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "1.1",
+                Libelle: "Chaque image porteuse d'information a-t-elle une alternative textuelle ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_15:
+        {
+            ErrorRule: "15",
+            ErrorId: "R15",
+            Wording: "L'attribut 'lang' est par défault obligatoire sur chaque page web.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "8.3",
+                Libelle: "Dans chaque page web, la langue par défaut est-elle présente ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#8.1.1",
+                Instructions: "",
+            }
+        },   
+            ESD1_ERROR_16: {
+                ErrorRule: "16",
+                ErrorId: "R16",
+                Wording: "Il faut une balise DOCTYPE sur la page",
+                Level: "err",
+                RDomain: "",
+                DocLink: "",
+                Categories: ["Obligatoire"],
+                FaeLink: true,
+                RGAA: {
+                    Test: "8.1",
+                    Libelle: "Chaque page web est-elle définie par une type de document ?",
+                    LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#8",
+                    Instructions: " Le type de document (balise doctype) est-il présent sur la page ? "
+                }
+            },   
+        ESD1_ERROR_17:
+        {
+            ErrorRule: "17",
+            ErrorId: "R17",
+            Wording: "Il est interdit d'utiliser une balise HTML dépréciée du W3C ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://www.w3schools.com/tags/",
+            Categories: ["Dépréciation"]
+        },
+        ESD1_ERROR_18_Maki:
+        {
+            ErrorRule: "18",
+            ErrorId: "R18",
+            Wording: "Un tableau de mise en forme ne doit pas utiliser les balises des tableaux de données caption, thead, tfoot, colgroup et th.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/47//menu:menu)",
+            Categories: ["Accessibilité"]
+        },
+        ESD1_ERROR_18_0:
+        {
+            ErrorRule: "18",
+            ErrorId: "R18",
+            Wording: "Un tableau de mise en forme ne doit pas utiliser les balises des tableaux de données caption, thead, tfoot, colgroup et th. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/47//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.8",
+                Libelle: "Chaque tableau de mise en forme ne doit pas utiliser d'éléments propres aux tableaux de données. Cette règle est-elle respectée ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.8.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_18_1:
+        {
+            ErrorRule: "18.1",
+            ErrorId: "R18.1",
+            Wording: "Un {0} ne doit pas avoir de description dans la propriété Summary.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/207//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.8",
+                Libelle: "Chaque tableau de mise en forme ne doit pas utiliser d'éléments propres aux tableaux de données. Cette règle est-elle respectée ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.8.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_19:
+        {
+            ErrorRule: "19",
+            ErrorId: "R19",
+            Wording: "Un tableau de type liste vide (class='a_vide') doit contenir une seule ligne.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Structure"]
+        },
+        //ESD1_ERROR_20:
+        //{
+        //    ErrorRule: "20",
+        //    ErrorId: "R20",
+        //    Wording: "Il est déconseillé d'utiliser ce niveau de rupture sur une page internet (classe DataRupture).",
+        //    Level: "warn",
+        //    RDomain: "internet",
+        //    DocLink: "0990016403;signet:OBJ_43",
+        //    Categories: ["Rupture"]
+        //},
+        ESD1_ERROR_21:
+        {
+            ErrorRule: "21",
+            ErrorId: "R21",
+            Wording: "Il est fortement déconseillé d'utiliser le second niveau de rupture.",
+            Level: "warn",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/45//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_22:
+        {
+            ErrorRule: "22",
+            ErrorId: "R22",
+            Wording: "Il est fortement déconseillé d'imbriquer plusieurs tableaux.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_23:
+        {
+            ErrorRule: "23",
+            ErrorId: "R23",
+            Wording: "Il est interdit d'utiliser deux menus applicatifs.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/5//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_24:
+        {
+            ErrorRule: "24",
+            ErrorId: "R24",
+            Wording: "Il est déconseillé d'utiliser le bloc br (ou br /) successivement.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_24_TODO:
+        {
+            ErrorRule: "24",
+            ErrorId: "R24",
+            Wording: "L'action Imprimer est interdite dans le titre d'une page internet - Elle doit être positionnée à droite dans le bloc des actions globales.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "",
+            Categories: ["Cohérence"]
+        },
+        /*ESD1_ERROR_25_TODO:
+        {
+            ErrorRule: "25",
+            ErrorId: "R25",
+            Wording: "L'action Imprimer doit être positionnée dans le titre du bloc principal de la page intranet s'il n'existe pas d'autres actions globales du bloc principal.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "",
+            Categories: ["Cohérence"]
+        },*/
+        ESD1_ERROR_25:
+        {
+            ErrorRule: "25",
+            ErrorId: "R25",
+            Wording: "Le dernier élément d'un fil d'ariane ne doit pas être un lien.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Accessibilité"]
+        },
+        ESD1_ERROR_26:
+        {
+            ErrorRule: "26",
+            ErrorId: "R26",
+            Wording: "L'action Actualiser doit être positionnée à droite dans le titre de la page intranet sauf s'il s'agit d'un rafraîchissement partiel de la page.",
+            Level: "warn",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/265//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_27:
+        {
+            ErrorRule: "27",
+            ErrorId: "R27",
+            Wording: "Les lignes d'occurrence d'un tableau de type liste doivent être mises en valeur lors du survol de la souris en Intranet.",
+            Level: "warn",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_28:
+        {
+            ErrorRule: "28",
+            ErrorId: "R28",
+            Wording: "Les nouveaux inputs types HTML5 (date/tel/mail...) ne doivent pas être utilisés.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_29:
+        {
+            ErrorRule: "29",
+            ErrorId: "R29",
+            Wording: "Le composant Ligne de décision est normalement composé d'une case à cocher, ou de radio boutons, et d'une phrase explicative.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/33//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_30:
+        {
+            ErrorRule: "30",
+            ErrorId: "R30",
+            Wording: "La première occurrence d'une abréviation ou d'un acronyme doit être expliquée (via la propriété Title).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/267//menu:menu)",
+            FaeLink: false,
+            Categories: ["Accessibilité"]
+        },
+        ESD1_ERROR_32:
+        {
+            ErrorRule: "32",
+            ErrorId: "R32",
+            Wording: "Le bloc à onglets doit toujours être situé dans le composant Bloc fonctionnel principal.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/29//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_33:
+        {
+            ErrorRule: "33",
+            ErrorId: "R33",
+            Wording: "Il est interdit d'inclure un composant Bloc à onglets dans un autre composant Bloc à onglets.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/29//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_34:
+        {
+            ErrorRule: "34",
+            ErrorId: "R34",
+            Wording: "Un, et un seul, composant Bouton de retour arrière doit être placé à gauche du titre de page.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_34_1:
+        {
+            ErrorRule: "34",
+            ErrorId: "R34.1",
+            Wording: "Le composant Bouton retour arrière est à placer dans la zone de bouton retour du composant MainFunctionBlock.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_34_3:
+        {
+            ErrorRule: "34",
+            ErrorId: "R34.3",
+            Wording: "En présence d'un bouton de type Backward dans le composant Bloc boutons de la page, placer un composant Bouton de retour arrière à gauche du titre de page.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_Maki:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35",
+            Wording: "Un composant Blocs de boutons contenant plus d'un bouton doit être ordonné. ({0}). ",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_inter:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35",
+            Wording: "Un composant Blocs de boutons contenant plus d'un bouton doit être ordonné. ({0}). ",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_intra:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35",
+            Wording: "Un composant Blocs de boutons contenant plus d'un bouton doit, de préférence, être ordonné. ({0}). ",
+            Level: "warn",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_1:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35.1",
+            Wording: "Un composant Bloc de boutons principaux doit contenir au moins un bouton principal.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_35_2:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35.2",
+            Wording: "Le bouton '{0}' ne doit pas être un bouton principal. ({1}).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_3:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35.3",
+            Wording: "Le bouton '{0}' doit être un bouton principal. ({1}).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_4:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35.4",
+            Wording: "Sous une page confirmation intranet, utiliser le bouton 'Retour' et non le bouton 'Modifier'.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_35_5:
+        {
+            ErrorRule: "35",
+            ErrorId: "R35.5",
+            Wording: "Sous une page confirmation internet, utiliser le bouton 'Modifier' et non le bouton 'Retour'.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/32//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_36_Maki:
+        {
+            ErrorRule: "36",
+            ErrorId: "R36",
+            Wording: "Les attributs servant à la présentation de l'information ne doivent pas être utilisés.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Accessibilité"]
+        },
+        ESD1_ERROR_36_0:
+        {
+            ErrorRule: "36",
+            ErrorId: "R36",
+            Wording: "L'attribut Width, servant à la présentation de l'information, ne doit pas être utilisé. Il est préférable d'utiliser l'attribut HTML style ou l'attribut XAML Css.Width.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "10.1",
+                Libelle: "Dans le site web, des feuilles de styles sont-elles utilisées pour contrôler la présentation de l'information ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#10.1.2",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_37:
+        {
+            ErrorRule: "37",
+            ErrorId: "R37",
+            Wording: "Le composant Ligne de décision doit être située dans le Bloc boutons.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/33//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_38:
+        {
+            ErrorRule: "38",
+            ErrorId: "R38",
+            Wording: "Il est déconseillé d'utiliser l'attribut 'Tabindex' avec une valeur différente de 0 ou de -1.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://www.w3.org/TR/WCAG20-TECHS/H4",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "12.9",
+                Libelle: "Dans chaque page web, la navigation ne doit pas contenir de piège au clavier. Cette règle est-elle respectée ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#12.9.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_39:
+        {
+            ErrorRule: "39",
+            ErrorId: "R39",
+            Wording: "Il est interdit d'utiliser l'attribut Tabindex avec une valeur différente de 0 ou de -1 dans une LightBox. La gestion de focus doit de rester simple.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://www.w3.org/TR/WCAG20-TECHS/H4",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "12.9",
+                Libelle: "Dans chaque page web, la navigation ne doit pas contenir de piège au clavier. Cette règle est-elle respectée ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#12.9.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_40_Maki:
+        {
+            ErrorRule: "40",
+            ErrorId: "R40",
+            Wording: "Un tableau de type tableaux de données complexe doit avoir un titre visible (Caption) ou invisible (e:InvisibleCaption).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.1",
+                Libelle: "Chaque tableau de données complexe a-t-il un résumé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_40_1:
+        {
+            ErrorRule: "40",
+            ErrorId: "R40.1",
+            Wording: "Un tableau de données complexe de type {0} doit comporter un titre visible (Caption) ou invisible (e:InvisibleCaption).",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.1",
+                Libelle: "Chaque tableau de données complexe a-t-il un résumé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_40_2:
+        {
+            ErrorRule: "40",
+            ErrorId: "R40.2",
+            Wording: "Il est interdit d'utiliser un titre visible (Caption) sur un {0} en intranet.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Structure"],
+        },
+        ESD1_ERROR_40_3:
+        {
+            ErrorRule: "40",
+            ErrorId: "R40.3",
+            Wording: "Un titre invisible (e:InvisibleCaption) est obligatoire pour des raisons d'accessibilité sur un tableau de données complexe de type {0} en intranet.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.1",
+                Libelle: "Chaque tableau de données complexe a-t-il un résumé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_40_4:
+        {
+            ErrorRule: "40",
+            ErrorId: "R40.4",
+            Wording: " Un titre invisible doit décrire précisément le contenu d'un tableau de données de type {0}, sans conserver la valeur par défaut issue du Maquetteur.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.1",
+                Libelle: "Chaque tableau de données complexe a-t-il un résumé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_40_5:
+        {
+            ErrorRule: "40",
+            ErrorId: "R40.5",
+            Wording: "Un titre de tableau de données de type {0} doit décrire précisément le contenu et ne peut pas être vide.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+                Test: "5.1",
+                Libelle: "Chaque tableau de données complexe a-t-il un résumé ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.1.1",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_41_Maki:
+        {
+            ErrorRule: "41",
+            ErrorId: "R41",
+            Wording: "Utilisation des renvois et notes de bas de page.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/68//menu:menu)",
+            Categories: ["Généralités"]
+        },
+        ESD1_ERROR_41_1:
+        {
+            ErrorRule: "41",
+            ErrorId: "R41.1",
+            Wording: "Il est interdit d’utiliser un composant Note de bas de page ou un renvoi vers une note de bas de page.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/68//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_41_2:
+        {
+            ErrorRule: "41",
+            ErrorId: "R41.2",
+            Wording: "Une zone est prévue au sein d'une carte offre commerciale pour afficher les notes liées à celle-ci. Il faut privilégier cet emplacement.",
+            Level: "warn",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/68//menu:menu)",
+            Categories: ["Structure"]
+        },
+
+
+
+        /* Suffixé par AddOn pour ne plus que la règle n'apparaisse dans MAQ */
+        ESD1_ERROR_42:
+        {
+            ErrorRule: "42",
+            ErrorId: "R42",
+            Wording: "Un texte doit être placé dans un conteneur sémantique (paragraphe, liste, cellule d'un tableau de données, etc.).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_43:
+        {
+            ErrorRule: "43",
+            ErrorId: "R43",
+            Wording: "Sur internet, la balise HTML5 'doctype' est conseillée pour éviter un rendu altéré de la page.",
+            Level: "info",
+            RDomain: "internet",
+            DocLink: "",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_44:
+        {
+            ErrorRule: "44",
+            ErrorId: "R44",
+            Wording: "L'utilisation de propriété de style est à proscrire, à l'exception de 'width' et 'height'. Utilisez les classes CSS. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Portabilité"]
+        },
+        ESD1_ERROR_44_1:
+        {
+            ErrorRule: "44",
+            ErrorId: "R44.1",
+            Wording: "L'usage de la balise Style est à proscrire (sauf composant fourni par M150). ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Portabilité"]
+        },
+        ESD1_ERROR_44_2:
+        {
+            ErrorRule: "44",
+            ErrorId: "R44.2",
+            Wording: "Il est formellement interdit d'utiliser l'instruction '!important' dans une balise Style à l'intérieur du bloc appli. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Portabilité"]
+        },
+        ESD1_ERROR_45:
+        {
+            ErrorRule: "45",
+            ErrorId: "R45",
+            Wording: "Un tableau ne peut être composé d'une seule cellule.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_46:
+        {
+            ErrorRule: "46",
+            ErrorId: "R46",
+            Wording: "Un bloc de regroupement contenant un tableau de type saisie doit être typé 'bloc de saisie' (IsInputBlock='True'). ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/260//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_46_1:
+        {
+            ErrorRule: "46",
+            ErrorId: "R46.1",
+            Wording: "Deux blocs de regroupement au maximum peuvent être imbriqués.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/260//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_46_2:
+        {
+            ErrorRule: "46",
+            ErrorId: "R46.2",
+            Wording: "Un bloc de regroupement contenant un champ de saisie doit être typé 'bloc de saisie' (IsInputBlock='True').",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/260//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_46_3:
+        {
+            ErrorRule: "46",
+            ErrorId: "R46.3",
+            Wording: "Un bloc de regroupement ne contenant pas de tableau de type saisie n'est pas à toper 'bloc de saisie' (IsInputBlock='True') même s'il contient un bloc de regroupement de type saisie.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/260//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_46_4:
+        {
+            ErrorRule: "46",
+            ErrorId: "R46.4",
+            Wording: "Un bloc de regroupement doit posséder un cadre (Display à 'Inline' ou  'Défaut').",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/260//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_46_5:
+        {
+            ErrorRule: "46",
+            ErrorId: "R46.5",
+            Wording: "Il est déconseillé d'insérer un bloc à onglet dans un bloc de regroupement.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/260//menu:menu)",
+            Categories: ["Structure"]
+        },
+
+        ESD1_ERROR_47:
+        {
+            ErrorRule: "47",
+            ErrorId: "R47",
+            Wording: "Le mode d'affichage pour le groupe de cases à cocher / radio-boutons riches est à renseigner (attribut Display).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/52//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_48:
+        {
+            ErrorRule: "48",
+            ErrorId: "R48",
+            Wording: "L'usage des thèmes de tuile ou de carte est interdit.",
+            Level: "warn",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/214//menu:menu)",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_49:
+        {
+            ErrorRule: "49",
+            ErrorId: "R49",
+            Wording: "Le menu illustré (a:RichLinkMenu) doit se trouver dans une carte ou dans une tuile. Merci de contacter l'équipe M150. ({0}).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/214//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_50:
+        {
+            ErrorRule: "50",
+            ErrorId: "R50",
+            Wording: "Il ne faut pas d'élément de saisie dans un tableau de type détail.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_51:
+        {
+            ErrorRule: "51",
+            ErrorId: "R51",
+            Wording: "Le bloc fonctionnel principal doit contenir tous les objets de la page. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/3//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_52:
+        {
+            ErrorRule: "52",
+            ErrorId: "R52",
+            Wording: "La Note de bas de page doit être placée après le Bloc fonctionnel principal. ({0}).",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/68//menu:menu)",
+            Categories: ["Structure"]
+        },
+        //      ESD1_ERROR_52_Double:
+        //    {
+        //        ErrorRule: "52",
+        //        ErrorId: "R52",
+        //        Wording: "Le bloc note ne doit pas être en double. ({0}).",
+        //        Level: "err",
+        //        RDomain: "",
+        //        DocLink: "0990016403;signet:OBJ_12_67",
+        //        Categories: ["Structure"]
+        //    },
+        ESD1_ERROR_53:
+        {
+            ErrorRule: "53",
+            ErrorId: "R53",
+            Wording: "Le bloc fonctionnel principal doit être unique. ({0}).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/3//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_54:
+        {
+            ErrorRule: "54",
+            ErrorId: "R54",
+            Wording: "En Internet, il est interdit d'utiliser un menu applicatif secondaire.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/421//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_55:
+        {
+            ErrorRule: "55",
+            ErrorId: "R55",
+            Wording: "Un bloc fonctionnel ou de regroupement doit avoir un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_56:
+        {
+            ErrorRule: "56",
+            ErrorId: "R56",
+            Wording: "Le titre du bloc fonctionnel doit être contigu à son contenu. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/15//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_58:
+        {
+            ErrorRule: "58",
+            ErrorId: "R58",
+            Wording: "Il faut un et un seul bloc application par page Web. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/3//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_59:
+        {
+            ErrorRule: "59",
+            ErrorId: "R59",
+            Wording: "Le titre de l'application doit être unique.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/12//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_59_1:
+        {
+            ErrorRule: "59",
+            ErrorId: "R59.1",
+            Wording: "Le titre de l'application est obligatoire.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/12//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+
+        ESD1_ERROR_59_2:
+        {
+            ErrorRule: "59",
+            ErrorId: "R59.2",
+            Wording: "Le titre de la page est obligatoire.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/13//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_60:
+        {
+            ErrorRule: "60",
+            ErrorId: "R60",
+            Wording: "Les messages doivent être positionnés après la zone de navigation applicative et avant le bloc fonctionnel principal.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/8//menu:menu)",
+            Categories: ["Structure"]
+        },
+
+        ESD1_ERROR_60_1:
+        {
+            ErrorRule: "60",
+            ErrorId: "R60.1",
+            Wording: "Le menu applicatif secondaire doit être positionné après le fil d'Ariane.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/421//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_61:
+        {
+            ErrorRule: "61",
+            ErrorId: "R61",
+            Wording: "La propriété Ellipsis ne peut s'appliquer à ce type de balise. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/228//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_65:
+        {
+            ErrorRule: "65",
+            ErrorId: "R65",
+            Wording: "Une mosaïque de tuiles (a:RCBTable) doit être directement le fils d'un bloc fonctionnel principal ou secondaire.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/250//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_66:
+        {
+            ErrorRule: "66",
+            ErrorId: "R66",
+            Wording: "Dans un bloc fonctionnel, il est interdit d'avoir un sous-titre sans avoir un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/216//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_67:
+        {
+            ErrorRule: "67",
+            ErrorId: "R67",
+            Wording: "Les boutons et les éléments de saisie sont interdits dans le composant Détail au survol.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/147//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_69_Maki:
+        {
+            ErrorRule: "69",
+            ErrorId: "R69",
+            Wording: "Un lien d'aide globale / opératoire est obligatoire sur la page d'accueil et le bandeau DESK des applications du réseau. Pour les autres types d'application, si une aide opératoire existe ou est envisagée, ce lien est à intégrer.",
+            Level: "warn",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/17//menu:menu)",
+            Categories: ["Homogénéité"]
+        },
+        ESD1_ERROR_69_intra:
+        {
+            ErrorRule: "69",
+            ErrorId: "R69",
+            Wording: "Un lien d'aide globale / opératoire est obligatoire sur la page d'accueil et le bandeau DESK des applications du réseau. Pour les autres types d'application, si une aide opératoire existe ou est envisagée, ce lien est à intégrer.",
+            Level: "info",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/17//menu:menu)",
+            Categories: ["Homogénéité"]
+        },
+        //  ESD1_ERROR_70:
+        //{
+        //    ErrorRule: "70",
+        //    ErrorId: "R70",
+        //    Wording: "Il est interdit de mélanger des boutons riches et des boutons standards au sein d'un même bloc de boutons. ({0}).",
+        //    Level: "err",
+        //    RDomain: "",
+        //    DocLink: "",
+        //    Categories: ["Cohérence","Structure"]
+        //},
+        ESD1_ERROR_71:
+        {
+            ErrorRule: "71",
+            ErrorId: "R71",
+            Wording: "La structure du composant Tuile est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/214//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_71_1:
+        {
+            ErrorRule: "71",
+            ErrorId: "R71.1",
+            Wording: "Il est interdit d'imbriquer des tuiles ou des cartes dans une tuile.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/214//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_71_2:
+        {
+            ErrorRule: "71",
+            ErrorId: "R71.2",
+            Wording: "Il est interdit d'utiliser des éléments de saisie dans une tuile.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/214//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_72:
+        {
+            ErrorRule: "72",
+            ErrorId: "R72",
+            Wording: "La structure du composant 'Carte' est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_72_1:
+        {
+            ErrorRule: "72",
+            ErrorId: "R72.1",
+            Wording: "Il est interdit d'imbriquer des tuiles ou des cartes dans une carte.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_72_2:
+        {
+            ErrorRule: "72",
+            ErrorId: "R72.2",
+            Wording: "Une carte doit se trouver dans une grille de cartes (a:CardsList) ou un carrousel (a:Carousel).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_72_3:
+        {
+            ErrorRule: "72",
+            ErrorId: "R72.3",
+            Wording: "Il ne peut pas y avoir simultanément un colonnage sur la grille de cartes (a:CardsList) et une largeur (width) définie sur la carte.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+            Categories: ["Structure"]
+        },
+        // ESD1_ERROR_72_4:
+        // {
+        //    ErrorRule: "72",
+        //    ErrorId: "R72.4",
+        //    Wording: "Un seul bouton est autorisé dans une carte.",
+        //    Level: "err",
+        //    RDomain: "internet",
+        //    DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+        //    Categories: ["Structure"]
+        // },
+        ESD1_ERROR_72_5:
+        {
+            ErrorRule: "72",
+            ErrorId: "R72.5",
+            Wording: "Les boutons sont interdits dans les cartes.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_72_6:
+        {
+            ErrorRule: "72",
+            ErrorId: "R72.6",
+            Wording: "Il est interdit d'utiliser des éléments de saisie dans une carte.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/236//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_73:
+        {
+            ErrorRule: "73",
+            ErrorId: "R73",
+            Wording: "La structure du composant Grille de cartes est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/232//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_74:
+        {
+            ErrorRule: "74",
+            ErrorId: "R74",
+            Wording: "La structure du composant Mosaïque de tuiles est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/250//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_75:
+        {
+            ErrorRule: "75",
+            ErrorId: "R75",
+            Wording: "Le composant 'Portail' doit être placé directement dans un bloc fonctionnel principal ou secondaire, un bloc de regroupement ou un tableau de mise en forme. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/249//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_76:
+        {
+            ErrorRule: "76",
+            ErrorId: "R76",
+            Wording: "Il est interdit d'inclure un champ de saisie dans un autre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Structure"]
+        },
+        // GLA 05/12/17 : Règle supprimée, le burger sera graphé en intranet pour avoir 3 petits points.
+        //ESD1_ERROR_76:
+        //{
+        //    ErrorRule: "76",
+        //    ErrorId: "R76",
+        //    Wording: "Les menus contextuels situés dans la colonne 'actions' d'une liste Intranet doivent être sans pictogramme spécifique (choisir : 'sans').",
+        //    Level: "err",
+        //    RDomain: "intranet",
+        //    DocLink: "",
+        //    Categories: ["Composant"]
+        //}
+        //,
+        //ESD1_ERROR_77:
+        //{
+        //    ErrorRule: "77",
+        //    ErrorId: "R77",
+        //    Wording: "Les &lt;br&gt; doivent être utilisés à l'intérieur d'un paragraphe &lt;p&gt; uniquement.",
+        //    Level: "err",
+        //    RDomain: "",
+        //    DocLink: "",
+        //    Categories: ["Généralités"]
+        //},
+        //ESD1_ERROR_78:
+        //{
+        //    ErrorRule: "78",
+        //    ErrorId: "R78",
+        //    Wording: "Le composant utilisé n'a pas été validé par l'ergo. ({0}).",
+        //    Level: "warn",
+        //    RDomain: "",
+        //    DocLink: "",
+        //    Categories: ["Généralités"]
+        //}
+        /*
+            ESD1_ERROR_79:
+            {
+                ErrorRule: "79",
+                ErrorId: "R79",
+                Wording: "Le composant 'Abréviation' (&lt;a:Abbrev&gt;) doit être utilisé pour représenter une abréviation ou un acronyme et non les balises html &lt;abbr&gt; ou &lt;acronym&gt; obsolètes.",
+                Level: "err",
+                RDomain: "",
+                DocLink: "",
+                Categories: ["Dépréciation"]
+            },
+        */
+        ESD1_ERROR_80:
+        {
+            ErrorRule: "80",
+            ErrorId: "R80",
+            Wording: "La ligne d'actions globales doit forcément être placée dans une zone d'actions globales.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/265//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_81_Maki:
+        {
+            ErrorRule: "81",
+            ErrorId: "R81",
+            Wording: "Le menu contextuel doit être placé directement dans la zone d'actions globales et non dans une action de la zone d'actions globales.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/142//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_81_1:
+        {
+            ErrorRule: "81",
+            ErrorId: "R81.1",
+            Wording: "Le menu contextuel doit être placé directement dans le lien d'actions globales et non dans une action unitaire.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/142//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_81_2:
+        {
+            ErrorRule: "81",
+            ErrorId: "R81.2",
+            Wording: "Le menu contextuel doit être placé directement dans le lien d'actions en ligne et non dans une action unitaire.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/142//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_82:
+        {
+            ErrorRule: "82",
+            ErrorId: "R82",
+            Wording: "Un menu de niveau 2 doit avoir un niveau 1 parent.",
+            Level: "warn",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/421//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        
+        ESD1_ERROR_83:
+        {
+            ErrorRule: "83",
+            ErrorId: "R83",
+            Wording: "L'icône utilisée n'est pas autorisée pour un lien d'action globale.",
+            Level: "err",
+            RDomain: "intranet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/265//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_87:
+        {
+            ErrorRule: "87",
+            ErrorId: "R87",
+            Wording: "Le composant Bloc de texte d'erreur (a:TextBlock) ne doit pas se substituer au message d'erreur DevBooster.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/263//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_88:
+        {
+            ErrorRule: "88",
+            ErrorId: "R88",
+            Wording: "Il est fortement conseillé d'exprimer la largeur des colonnes d'un tableau en %.",
+            Level: "warn",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Responsive"]
+        },
+        ESD1_ERROR_88_1:
+        {
+            ErrorRule: "88_1",
+            ErrorId: "R88.1",
+            Wording: "La somme des composants e:Col ne doit pas dépasser 100%.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/36//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_89:
+        {
+            ErrorRule: "89",
+            ErrorId: "R89",
+            Wording: "Il est très fortement déconseillé d'utiliser l'attribut 'disabled'.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_90:
+        {
+            ErrorRule: "90",
+            ErrorId: "R90",
+            Wording: "Un bloc fonctionnel secondaire avec l'attribut 'pliable' doit posséder un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/216//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_91:
+        {
+            ErrorRule: "91",
+            ErrorId: "R91",
+            Wording: "Le composant Message de protection de la vie privée (e:UserPrivacyMessage) est interdit.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/418//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_92:
+        {
+            ErrorRule: "92",
+            ErrorId: "R92",
+            Wording: "Il est fortement déconseillé d'imbriquer des blocs fonctionnels secondaires.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/216//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+        ESD1_ERROR_93:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93",
+            Wording: "La structure du composant Carte produit est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+
+        ESD1_ERROR_93_1:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.1",
+            Wording: "Il est interdit d'imbriquer une carte produit dans une tuile ou une carte.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_2:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.2",
+            Wording: "Une carte produit se trouve en général dans une grille de cartes (a:CardsList) ou un carrousel (a:carrousel).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_3:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.3",
+            Wording: "Il ne peut pas y avoir simultanément un colonnage sur la grille de cartes (a:CardsList), ou un carrousel (a:carrousel), avec une largeur (width) définie sur la carte produit.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_4:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.4",
+            Wording: "Un seul bouton est autorisé dans une carte produit.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_5:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.5",
+            Wording: "Il est interdit d'utiliser des éléments de saisie dans une carte produit.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_6:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.6",
+            Wording: "Une carte produit doit contenir un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_7:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.7",
+            Wording: "Une carte produit contient généralement une donnée importante (prix, loyer,...).",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_93_8:
+        {
+            ErrorRule: "93",
+            ErrorId: "R93.8",
+            Wording: "Éviter de mixer à mauvais escient sur une même page une carte produit et une carte offre commerciale.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/277//menu:menu)",
+            Categories: ["Cohérence"]
+        },
+
+        ESD1_ERROR_94:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94",
+            Wording: "La structure du composant 'Carte offre commerciale' est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_94_1:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94.1",
+            Wording: "Il est interdit d'imbriquer une carte offre commerciale dans une tuile ou une carte.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+        // GSA - 23/04/19 retour recette - test retiré, trop restrictif
+        // ESD1_ERROR_94_2:
+        // {
+        //     ErrorRule: "94",
+        //     ErrorId: "R94.2",
+        //     Wording: "Une offre commerciale se trouve en général dans une grille de cartes (&lt;a:CardsList&gt;) ou un carrousel (&lt;a:carrousel&gt;).",
+        //     Level: "warn",
+        //     RDomain: "",
+        //     DocLink: "0990016403;signet:OBJ_271",
+        //     Categories: ["Structure"]
+        // },
+        ESD1_ERROR_94_3:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94.3",
+            Wording: "Il ne peut pas y avoir simultanément un colonnage sur la grille de cartes (a:CardsList), ou un carrousel (a:carrousel), avec une largeur (width) définie sur une offre commerciale.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_94_4:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94.4",
+            Wording: "Deux boutons maximum sont autorisés par zone dans une carte offre commerciale.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_94_5:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94.5",
+            Wording: "Dans une carte offre commerciale, un bouton ne peut être placé que dans le pied du composant ou dans un Libellé-Valeur.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_94_6:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94.6",
+            Wording: "Une carte offre commerciale doit contenir un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_94_7:
+        {
+            ErrorRule: "94",
+            ErrorId: "R94.7",
+            Wording: "Il est recommandé d'inclure une donnée importante sur la carte offre commerciale afin de mettre en avant le coût associé.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/282//menu:menu)",
+            Categories: ["Structure"]
+        },
+
+        ESD1_ERROR_95:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95",
+            Wording: "La structure du composant Carrousel est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/138//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_95_1:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95.1",
+            Wording: "Il est interdit d'imbriquer un carrousel dans un autre carrousel.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/138//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_95_2:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95.2",
+            Wording: "Un item de carrousel produits ne peut contenir qu'un exemplaire unique des composants suivants : carte, carte produit, carte offre commerciale, image, image zoomable, radio-boutons riches (cas du visuel produit).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/138//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_95_3:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95.3",
+            Wording: "Il est interdit d'utiliser des éléments de saisie dans un item de carrousel.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/138//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_95_4:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95.4",
+            Wording: "La lightbox du carrousel découverte doit comporter un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/409//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_95_5:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95.5",
+            Wording: "Le carrousel du carrousel découverte doit comporter au moins un item.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/409//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_95_6:
+        {
+            ErrorRule: "95",
+            ErrorId: "R95.6",
+            Wording: "Une élément du carrousel découverte doit comporter au moins un titre (&lt;p class='ei_paraghtitle'&gt;).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/409//menu:menu)",
+            Categories: ["Structure"]
+        },
+
+        ESD1_ERROR_96:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96",
+            Wording: "La structure du composant 'Infobulle découverte' est incorrecte. ({0}).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_96_1:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.1",
+            Wording: "Il est fortement conseillé de limiter le composant 'Infobulle découverte' à 10 items.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_96_2:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.2",
+            Wording: "Une Infobulle découverte doit contenir un titre.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_96_3:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.3",
+            Wording: "Le titre d'une Infobulle découverte ne doit pas dépasser 60 caractères.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_96_4:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.4",
+            Wording: "Une Infobulle découverte doit contenir un texte de descriptif.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_96_5:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.5",
+            Wording: "Le texte descriptif d'une Infobulle découverte ne doit pas dépasser 160 caractères.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_96_6:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.6",
+            Wording: "Une Infobulle découverte ne doit pas contenir de visuels (image, vidéo, picto,...).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_96_7:
+        {
+            ErrorRule: "96",
+            ErrorId: "R96.7",
+            Wording: "Il est fortement déconseillé d'utiliser un lien dans l'infobulle découverte qui la détournerait de sa fonction.",
+            Level: "warn",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/415//menu:menu)",
+            Categories: ["Lisibilité"]
+        },
+        ESD1_ERROR_97:
+        {
+            ErrorRule: "97",
+            ErrorId: "R97",
+            Wording: "Les tableaux de type liste doivent avoir au moins une ligne d'entêtes (visible ou invisible).",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "5.6",
+                Libelle: "Chaque tableau de données contient'il une entête avec une balise th?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#5.6",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_98:
+        {
+            ErrorRule: "98",
+            ErrorId: "R98",
+            Wording: "Un composant picto à l'intérieur d'un bouton riche ne doit avoir ni de Title, ni d'Alt.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Structure"],
+            FaeLink: true,
+            RGAA: {
+                Test: "1.2",
+                Libelle: "Chaque image de décoration est-elle correctement ignorée par les technologies d’assistance ",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#1.2",
+                Instructions: "",
+            }
+        },
+        ESD1_ERROR_99:
+        {
+            ErrorRule: "99",
+            ErrorId: "R99",
+            Wording: "Une image lien d'action ne peut pas être placée dans un tableau sans liens d'actions en ligne.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "https://ergonomie-ei-si.cm-cic.fr/fr/catalogue/internet.html#/internet/(content:components/19//menu:menu)",
+            Categories: ["Structure"]
+        },
+        ESD1_ERROR_100:
+        {
+            ErrorRule: "100",
+            ErrorId: "R100",
+            Wording: "Les sons doivent être contrôlables par l’utilisateur.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            FaeLink: true,
+            Categories: ["Accessibilité"],
+            RGAA: {
+              Test: "4.10",
+              Libelle: "Is every automatically triggered sound user controllable?",
+              LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#4.10",
+              Instructions: "",
+          }
+        },
+        ESD1_ERROR_103:
+        {
+            ErrorRule: "103",
+            ErrorId: "R103",
+            Wording: "La balise &lt;{0}&gt; est manquante, elle est nécessaire à la structuration de la page.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "9.2",
+                Libelle: "Dans chaque page web, la structure du document est-elle cohérente (hors cas particuliers)?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#9.2",
+                Instructions: ""
+        }},
+        ESD1_ERROR_103_1:
+        {
+            ErrorRule: "103",
+            ErrorId: "R103.1",
+            Wording: "Il ne peut y avoir qu'une seule balise main dans la page.",
+            Level: "err",
+            RDomain: "internet",
+            DocLink: "",
+            Categories: ["Accessibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "9.2",
+                Libelle: "Dans chaque page web, la structure du document est-elle cohérente (hors cas particuliers)?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#9.2",
+                Instructions: ""
+        }},
+        ESD1_ERROR_104:
+        {
+            ErrorRule: "104",
+            ErrorId: "R104",
+            Wording: "Tout élément de rôle groupe doit contrenir au moins deux champs de saisie.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.5",
+                Libelle: "Dans chaque formulaire, les champs de même nature sont-ils regroupés, si nécessaire ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.5",
+                Instructions: ""
+        }},
+        ESD1_ERROR_104_2:
+        {
+            ErrorRule: "104",
+            ErrorId: "R104.2",
+            Wording: "Tout élément de rôle groupe radio doit contenir uniquement des radios boutons.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.5",
+                Libelle: "Dans chaque formulaire, les champs de même nature sont-ils regroupés, si nécessaire ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.5",
+                Instructions: ""
+        }},
+        ESD1_ERROR_104_3:
+        {
+            ErrorRule: "104",
+            ErrorId: "R104.3",
+            Wording: "Tout élément de rôle groupe radio doit contenir au moins deux radios boutons.",
+            Level: "err",
+            RDomain: "",
+            DocLink: "",
+            Categories: ["Lisibilité"],
+            FaeLink: true,
+            RGAA: {
+                Test: "11.5",
+                Libelle: "Dans chaque formulaire, les champs de même nature sont-ils regroupés, si nécessaire ?",
+                LienDoc: "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#11.5",
+                Instructions: ""
+        }}
+    }}
+module.exports={"rulesFr": ESD1_MESSAGES.Rules};
